@@ -1,0 +1,20 @@
+specVersion: "4.0"
+metadata:
+  name: ns.statistics
+type: application
+builder:
+  resources:
+    excludes:
+      - /test/**
+      - /localService/**
+  customTasks:
+    - name: ui5-task-zipper
+      afterTask: generateVersionInfo
+      configuration:
+        archiveName: statistics
+        relativePaths: true
+        additionalFiles:
+          - xs-app.json
+resources:
+  configuration:
+    propertiesFileSourceEncoding: UTF-8

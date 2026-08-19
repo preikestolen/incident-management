@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        window['sap-ushell-config'] = {
+            defaultRenderer: 'fiori2',
+            renderers: {
+                fiori2: {
+                    componentData: {
+                        config: {
+                            theme: 'sap_evening_horizon'
+                        }
+                    }
+                }
+            },
+            services: {
+                NavTargetResolution: {
+                    config: {
+                        allowTestUrlComponentConfig: true,
+                        enableClientSideTargetResolution: true
+                    }
+                }
+            },
+            applications: {
+                "incidents-app": {
+                    title: 'Incident-Management',
+                    description: 'Incidents',
+                    additionalInformation: 'SAPUI5.Component=ns.incidents',
+                    applicationType: 'URL',
+                    url: "/incidents/webapp",
+                    navigationMode: 'embedded'
+                }
+            }
+        }
+    </script>
+    <script src="https://ui5.sap.com/test-resources/sap/ushell/bootstrap/sandbox.js"></script>
+    <script src="https://ui5.sap.com/resources/sap-ui-core.js" data-sap-ui-libs="sap.m, sap.ushell, sap.fe.templates"
+        data-sap-ui-compatversion="edge" data-sap-ui-theme="sap_evening_horizon" data-sap-ui-frameoptions="allow"
+        data-sap-ui-bindingsyntax="complex">
+        </script>
+</head>
+
+<body class="sapUiBody">
+    <!-- This div is required for the shell to render -->
+    <div id="content"></div>
+
+    <script>
+        sap.ui.getCore().attachInit(function () {
+            sap.ushell.Container.createRenderer("fiori2", true).then(function (oRenderer) {
+                oRenderer.placeAt("content");
+            });
+        });
+    </script>
+</body>
+
+</html>
