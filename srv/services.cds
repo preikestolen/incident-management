@@ -10,12 +10,14 @@ service ProcessorService {
         DeleteRestrictions.Deletable : true
     }
     @cds.redirection.target
-    entity Incidents          as projection on my.Incidents;
+    entity Incidents          as projection on my.Incidents
+        actions {
+            action escalateIncident(assigneeName: String) returns Incidents;
+        };
 
     @readonly
     entity Customers          as projection on my.Customers;
 
-    // ✅ Add statistics — read only, no draft needed
     @readonly
     entity IncidentsByStatus  as
         select from my.Incidents {
@@ -42,7 +44,6 @@ service ProcessorService {
 }
 
 annotate ProcessorService.Incidents with @odata.draft.enabled;
-//annotate ProcessorService.Incidents with @odata.draft.bypass;
 
 /**
  * Service used by administrators to manage customers and incidents.

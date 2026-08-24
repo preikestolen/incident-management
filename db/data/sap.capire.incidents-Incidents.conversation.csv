@@ -3,3 +3,139 @@ ID,up__ID,timestamp,author,message
 2b23bb4b-4ac7-4a24-ac02-aa10cabd843c,3a4ede72-244a-4f5f-8efa-b17e032d01ee,1995-12-18T04:24:00Z,Emily Elizabeth,Can you please check if there are any loose connections?
 9583f982-d7df-4aad-ab26-301d4a157cd7,3583f982-d7df-4aad-ab26-301d4a157cd7,2022-09-04T12:00:00Z,Sunny Sunshine,Please check why the solar panel is broken.
 9583f982-d7df-4aad-ab26-301d4a158cd7,3ccf474c-3881-44b7-99fb-59a2a4668418,2022-09-04T13:00:00Z,Bradley Flowers,What exactly is wrong?
+a1000003-0003-0003-0003-000000000001,8b6c7d8e-6667-7778-8889-999000111222,2024-01-12T07:30:00Z,Sarah Connor,Chemical leaking from agitator shaft seal. Area isolated and PPE required.
+a1000003-0003-0003-0003-000000000002,8b6c7d8e-6667-7778-8889-999000111222,2024-01-12T09:00:00Z,John Miller,Maintenance team on site. Seal type confirmed as mechanical double seal. Parts being sourced.
+a1000003-0003-0003-0003-000000000003,8b6c7d8e-6667-7778-8889-999000111222,2024-01-12T11:00:00Z,Mark Davis,Seal replacement parts arrived. Agitator isolated and locked out. Work in progress.
+a1000003-0003-0003-0003-000000000004,8b6c7d8e-6667-7778-8889-999000111222,2024-01-12T15:00:00Z,Sarah Connor,Seal replaced and leak test passed. Agitator back in service. Chemical level verified normal.
+a1000010-0010-0010-0010-000000000001,6c3d4e5f-3335-4446-5557-667778889990,2024-01-19T06:30:00Z,John Miller,Smoke detector triggered false alarm in workshop 4. Full evacuation completed as per procedure.
+a1000010-0010-0010-0010-000000000002,6c3d4e5f-3335-4446-5557-667778889990,2024-01-19T07:00:00Z,Sarah Connor,Fire brigade notified and stood down. No actual fire. Detector under investigation.
+a1000010-0010-0010-0010-000000000003,6c3d4e5f-3335-4446-5557-667778889990,2024-01-19T07:30:00Z,Mark Davis,Detector found heavily contaminated with grinding dust. This caused false trigger.
+a1000010-0010-0010-0010-000000000004,6c3d4e5f-3335-4446-5557-667778889990,2024-01-19T08:00:00Z,John Miller,Detector cleaned and sensitivity tested. All clear. Production resumed. Root cause documented.
+a1000012-0012-0012-0012-000000000001,8e5f6a7b-5557-6668-7779-889990001112,2024-01-21T07:00:00Z,Sarah Connor,Level transmitter output stuck at 40 percent. Tank level visually confirmed much higher.
+a1000012-0012-0012-0012-000000000002,8e5f6a7b-5557-6668-7779-889990001112,2024-01-21T08:00:00Z,Mark Davis,Transmitter impulse line suspected blocked. Attempting to blow through with instrument air.
+a1000012-0012-0012-0012-000000000003,8e5f6a7b-5557-6668-7779-889990001112,2024-01-21T09:00:00Z,John Miller,Impulse line clear but transmitter still faulty. Electronic failure confirmed. Replacement sourced.
+a1000012-0012-0012-0012-000000000004,8e5f6a7b-5557-6668-7779-889990001112,2024-01-21T10:00:00Z,Sarah Connor,Transmitter replaced with calibrated spare. Reading correctly. Tank operations back to normal.
+a1000013-0013-0013-0013-000000000001,9f6a7b8c-6668-7779-8880-990001112223,2024-01-22T08:00:00Z,John Miller,Furnace temperature sensor reading 15 degrees low vs reference thermometer.
+a1000013-0013-0013-0013-000000000002,9f6a7b8c-6668-7779-8880-990001112223,2024-01-22T08:45:00Z,Mark Davis,Heat treatment batches on hold pending sensor repair. Quality team notified.
+a1000013-0013-0013-0013-000000000003,9f6a7b8c-6668-7779-8880-990001112223,2024-01-22T10:00:00Z,Sarah Connor,Sensor replaced. Calibration verified against NIST traceable reference. Drift confirmed 15.3 degrees.
+a1000013-0013-0013-0013-000000000004,9f6a7b8c-6668-7779-8880-990001112223,2024-01-22T11:00:00Z,John Miller,Previous batches reviewed by quality. Three batches flagged for re-inspection. Furnace back in service. Closed.
+a1000015-0015-0015-0015-000000000001,2b8c9d0e-8880-9991-0002-112223334445,2024-01-24T07:30:00Z,Sarah Connor,Control valve not responding to positioner signal. Valve stuck at 30 percent open. Process impacted.
+a1000015-0015-0015-0015-000000000002,2b8c9d0e-8880-9991-0002-112223334445,2024-01-24T08:00:00Z,Mark Davis,Manual bypass opened to maintain process flow. Root cause investigation started.
+a1000015-0015-0015-0015-000000000003,2b8c9d0e-8880-9991-0002-112223334445,2024-01-24T08:45:00Z,John Miller,Positioner air supply tube found kinked and partially blocked. Tube replaced.
+a1000015-0015-0015-0015-000000000004,2b8c9d0e-8880-9991-0002-112223334445,2024-01-24T09:00:00Z,Sarah Connor,Valve responding correctly. Manual bypass closed. Process parameters normal.
+a1000017-0017-0017-0017-000000000001,4d0e1f2a-0002-1113-2224-334445556667,2024-01-26T09:00:00Z,Mark Davis,Turbine blade erosion found during borescope inspection. Stage 3 blades affected.
+a1000017-0017-0017-0017-000000000002,4d0e1f2a-0002-1113-2224-334445556667,2024-01-26T10:00:00Z,John Miller,Turbine load reduced to 70 percent immediately. OEM engineering team notified.
+a1000017-0017-0017-0017-000000000003,4d0e1f2a-0002-1113-2224-334445556667,2024-01-26T12:00:00Z,Sarah Connor,OEM confirmed blade erosion pattern. Replacement blade set delivery in 3 weeks.
+a1000017-0017-0017-0017-000000000004,4d0e1f2a-0002-1113-2224-334445556667,2024-01-26T14:00:00Z,Mark Davis,Risk assessment completed. Turbine can operate at 70 percent load safely until blade replacement.
+a1000017-0017-0017-0017-000000000005,4d0e1f2a-0002-1113-2224-334445556667,2024-02-16T09:00:00Z,John Miller,Replacement blades arrived. Turbine shutdown for blade replacement. Work order raised.
+a1000018-0018-0018-0018-000000000001,5e1f2a3b-1113-2224-3335-445556667778,2024-01-27T07:00:00Z,Sarah Connor,Pump vibration alarm triggered. Laser alignment check shows 0.15mm offset on coupling.
+a1000018-0018-0018-0018-000000000002,5e1f2a3b-1113-2224-3335-445556667778,2024-01-27T07:30:00Z,Mark Davis,Pump bearing temperature also elevated at 78 degrees C. Possible bearing damage from vibration.
+a1000018-0018-0018-0018-000000000003,5e1f2a3b-1113-2224-3335-445556667778,2024-01-27T09:00:00Z,John Miller,Shaft realigned using laser alignment tool. Coupling bolts retorqued to specification.
+a1000018-0018-0018-0018-000000000004,5e1f2a3b-1113-2224-3335-445556667778,2024-01-27T11:00:00Z,Sarah Connor,Vibration reduced to 2.1mm/s. Bearing temperature back to 52 degrees C. Resolved.
+a1000026-0026-0026-0026-000000000001,4a9b0c1d-9991-0002-1113-223334445556,2024-02-04T08:30:00Z,Mark Davis,Conveyor belt slipping due to worn pulley lagging. Drive side pulley severely worn.
+a1000026-0026-0026-0026-000000000002,4a9b0c1d-9991-0002-1113-223334445556,2024-02-04T09:00:00Z,John Miller,Belt tension increased as temporary measure. Lagging thickness measured at 4mm vs 12mm new.
+a1000026-0026-0026-0026-000000000003,4a9b0c1d-9991-0002-1113-223334445556,2024-02-04T10:00:00Z,Sarah Connor,Ceramic lagging material sourced. Conveyor shutdown scheduled for 2 hour re-lagging job.
+a1000026-0026-0026-0026-000000000004,4a9b0c1d-9991-0002-1113-223334445556,2024-02-04T14:00:00Z,Mark Davis,Pulley re-lagged and conveyor restarted. Belt tracking adjusted. No slippage observed.
+a1000027-0027-0027-0027-000000000001,5b0c1d2e-0002-1113-2224-334445556667,2024-02-05T07:00:00Z,Sarah Connor,Fan V-belt slipping at startup. Belt squealing audible. Fan not reaching full speed.
+a1000027-0027-0027-0027-000000000002,5b0c1d2e-0002-1113-2224-334445556667,2024-02-05T07:30:00Z,John Miller,Belt tension measured and found 40 percent below specification. Belt set worn and glazed.
+a1000027-0027-0027-0027-000000000003,5b0c1d2e-0002-1113-2224-334445556667,2024-02-05T08:30:00Z,Mark Davis,Matched belt set replaced. Tension set to 450N per belt as per OEM spec.
+a1000027-0027-0027-0027-000000000004,5b0c1d2e-0002-1113-2224-334445556667,2024-02-05T09:30:00Z,Sarah Connor,Fan running at full speed. No slippage. Retension check scheduled after 24 hours running.
+a1000028-0028-0028-0028-000000000001,6c1d2e3f-1113-2224-3335-445556667778,2024-02-06T06:00:00Z,John Miller,Production line stopped due to roller bearing seizure. Loud bang reported by operator.
+a1000028-0028-0028-0028-000000000002,6c1d2e3f-1113-2224-3335-445556667778,2024-02-06T06:15:00Z,Mark Davis,Line isolated and LOTO applied. Failed bearing removed. Shaft inspected for scoring.
+a1000028-0028-0028-0028-000000000003,6c1d2e3f-1113-2224-3335-445556667778,2024-02-06T07:00:00Z,Sarah Connor,Shaft scoring found. Shaft needs grinding before new bearing fitted. Machine shop contacted.
+a1000028-0028-0028-0028-000000000004,6c1d2e3f-1113-2224-3335-445556667778,2024-02-06T10:00:00Z,John Miller,Shaft returned from grinding. New bearing fitted and aligned. Line restarted successfully.
+a1000028-0028-0028-0028-000000000005,6c1d2e3f-1113-2224-3335-445556667778,2024-02-06T12:00:00Z,Mark Davis,Root cause: insufficient lubrication. PM schedule updated to increase grease frequency.
+a1000029-0029-0029-0029-000000000001,7d2e3f4a-2224-3335-4446-556667778889,2024-02-07T09:00:00Z,Mark Davis,Tank roof seal cracked along 3 meter section. Rain ingress risk identified. Tank contents at risk.
+a1000029-0029-0029-0029-000000000002,7d2e3f4a-2224-3335-4446-556667778889,2024-02-07T10:00:00Z,Sarah Connor,Temporary waterproof cover installed over crack. Tank contents checked for water contamination.
+a1000029-0029-0029-0029-000000000003,7d2e3f4a-2224-3335-4446-556667778889,2024-02-07T11:00:00Z,John Miller,Permanent seal replacement contractor booked. Material ordered. Estimated 2 week lead time.
+a1000029-0029-0029-0029-000000000004,7d2e3f4a-2224-3335-4446-556667778889,2024-02-07T13:00:00Z,Mark Davis,Temporary repair holding. Daily inspection assigned until permanent repair completed.
+a1000032-0032-0032-0032-000000000001,1a5b6c7d-5557-6668-7779-889990001112,2024-02-10T08:00:00Z,Mark Davis,Safety valve on air receiver found weeping at 90 percent of set pressure. Immediate risk assessed.
+a1000032-0032-0032-0032-000000000002,1a5b6c7d-5557-6668-7779-889990001112,2024-02-10T08:30:00Z,John Miller,Air receiver pressure reduced to 80 percent of normal. Operations informed of reduced capacity.
+a1000032-0032-0032-0032-000000000003,1a5b6c7d-5557-6668-7779-889990001112,2024-02-10T09:00:00Z,Sarah Connor,Certified replacement safety valve sourced from stores. Receiver depressurised for valve change.
+a1000032-0032-0032-0032-000000000004,1a5b6c7d-5557-6668-7779-889990001112,2024-02-10T10:00:00Z,Mark Davis,Valve replaced. Receiver re-pressurised and tested. No leakage. Full pressure restored.
+a1000038-0038-0038-0038-000000000001,7a1b2c3d-1114-2225-3336-446557668779,2024-02-16T07:30:00Z,Mark Davis,Elevator safety brake slipping during load test. Stopping distance 40 percent over specification.
+a1000038-0038-0038-0038-000000000002,7a1b2c3d-1114-2225-3336-446557668779,2024-02-16T07:45:00Z,John Miller,Elevator taken out of service immediately and locked out. Warning signs posted. Users notified.
+a1000038-0038-0038-0038-000000000003,7a1b2c3d-1114-2225-3336-446557668779,2024-02-16T08:30:00Z,Sarah Connor,Brake lining thickness measured at 2mm vs 8mm minimum. Urgent replacement parts ordered.
+a1000038-0038-0038-0038-000000000004,7a1b2c3d-1114-2225-3336-446557668779,2024-02-16T11:00:00Z,Mark Davis,HSE notified as per regulatory requirement. Incident report filed. Parts ETA 48 hours.
+a1000038-0038-0038-0038-000000000005,7a1b2c3d-1114-2225-3336-446557668779,2024-02-18T14:00:00Z,John Miller,Brake linings replaced. Load test passed. Stopping distance within spec. Elevator back in service.
+a1000001-0001-0001-0001-000000000001,6f4a5b6c-4445-5556-6667-777888999000,2024-01-10T08:00:00Z,John Miller,Bag filter torn on unit 3. Dust emissions above permitted level detected.
+a1000001-0001-0001-0001-000000000002,6f4a5b6c-4445-5556-6667-777888999000,2024-01-10T09:30:00Z,Sarah Connor,Replacement filter bag ordered from supplier. Unit 3 operating at reduced capacity.
+a1000001-0001-0001-0001-000000000003,6f4a5b6c-4445-5556-6667-777888999000,2024-01-10T10:30:00Z,Mark Davis,Filter replaced and dust collector back in service. Emissions within limits confirmed.
+a1000002-0002-0002-0002-000000000001,7a5b6c7d-5556-6667-7778-888999000111,2024-01-11T09:00:00Z,John Miller,Flue gas probe blocked with carbon deposits. Analyzer reading unreliable.
+a1000002-0002-0002-0002-000000000002,7a5b6c7d-5556-6667-7778-888999000111,2024-01-11T11:00:00Z,Sarah Connor,Probe removed and soaking in cleaning solvent. Manual flue gas checks being done hourly.
+a1000002-0002-0002-0002-000000000003,7a5b6c7d-5556-6667-7778-888999000111,2024-01-11T14:00:00Z,Mark Davis,Probe cleaned and reinstalled. Analyzer reading consistent with manual checks. Calibrated.
+a1000004-0004-0004-0004-000000000001,9c7d8e9f-7778-8889-9990-000111222333,2024-01-13T08:00:00Z,Mark Davis,Hydraulic cylinder drifting 5mm per hour. Door not holding position when stopped.
+a1000004-0004-0004-0004-000000000002,9c7d8e9f-7778-8889-9990-000111222333,2024-01-13T10:00:00Z,John Miller,Internal seal wear confirmed by pressure test. Seal kit ordered. Temporary manual locking applied.
+a1000004-0004-0004-0004-000000000003,9c7d8e9f-7778-8889-9990-000111222333,2024-01-13T15:00:00Z,Sarah Connor,Seal replacement scheduled for weekend. Door safe to use with manual lock engaged.
+a1000005-0005-0005-0005-000000000001,1d8e9f0a-8889-9990-0001-111222333444,2024-01-14T06:00:00Z,John Miller,Pump strainer 80 percent blocked. Flow rate down to 60 percent of design.
+a1000005-0005-0005-0005-000000000002,1d8e9f0a-8889-9990-0001-111222333444,2024-01-14T07:30:00Z,Mark Davis,Strainer isolated and removed for cleaning. Debris identified as scale from basin walls.
+a1000005-0005-0005-0005-000000000003,1d8e9f0a-8889-9990-0001-111222333444,2024-01-14T09:00:00Z,Sarah Connor,Strainer cleaned and reinstalled. Flow rate back to 100 percent. Basin inspection scheduled.
+a1000007-0007-0007-0007-000000000001,3f0a1b2c-0001-1112-2223-333444555666,2024-01-16T08:30:00Z,Mark Davis,Compressor running rough with blow-by from piston rings. Oil consumption increased.
+a1000007-0007-0007-0007-000000000002,3f0a1b2c-0001-1112-2223-333444555666,2024-01-16T10:00:00Z,John Miller,Compressor operating at reduced load. Ring wear confirmed by compression test.
+a1000007-0007-0007-0007-000000000003,3f0a1b2c-0001-1112-2223-333444555666,2024-01-16T13:00:00Z,Sarah Connor,Overhaul scheduled for next month during planned shutdown. Parts ordered. Monitoring daily.
+a1000007-0007-0007-0007-000000000004,3f0a1b2c-0001-1112-2223-333444555666,2024-02-12T16:00:00Z,Mark Davis,Piston rings replaced during planned overhaul. Compression test passed. Back to full capacity.
+a1000009-0009-0009-0009-000000000001,5b2c3d4e-2224-3335-4446-556667778889,2024-01-18T08:00:00Z,Sarah Connor,Thermal insulation on steam pipe section B visibly damaged. Surface temperature 85 degrees C.
+a1000009-0009-0009-0009-000000000002,5b2c3d4e-2224-3335-4446-556667778889,2024-01-18T10:00:00Z,Mark Davis,Area marked with warning tape. Heat loss estimated at 12 percent above normal.
+a1000009-0009-0009-0009-000000000003,5b2c3d4e-2224-3335-4446-556667778889,2024-01-18T14:00:00Z,John Miller,Insulation contractor contacted. Materials ordered. Repair scheduled for next week.
+a1000011-0011-0011-0011-000000000001,7d4e5f6a-4446-5557-6668-778889990001,2024-01-20T09:00:00Z,Mark Davis,Flow meter reading 15 percent higher than expected. Possible sensor fouling or damage.
+a1000011-0011-0011-0011-000000000002,7d4e5f6a-4446-5557-6668-778889990001,2024-01-20T11:00:00Z,Sarah Connor,Reference check with portable clamp-on meter confirms fixed meter reading incorrectly.
+a1000011-0011-0011-0011-000000000003,7d4e5f6a-4446-5557-6668-778889990001,2024-01-20T13:00:00Z,John Miller,Meter removed for calibration. Temporary bypass with portable meter installed.
+a1000014-0014-0014-0014-000000000001,1a7b8c9d-7779-8880-9991-001112223334,2024-01-23T09:30:00Z,Mark Davis,Pressure transmitter calibration certificate expired 30 days ago. Flagged during QA audit.
+a1000014-0014-0014-0014-000000000002,1a7b8c9d-7779-8880-9991-001112223334,2024-01-23T11:00:00Z,John Miller,Spare calibrated transmitter installed. Faulty unit sent to calibration lab.
+a1000014-0014-0014-0014-000000000003,1a7b8c9d-7779-8880-9991-001112223334,2024-01-23T14:00:00Z,Sarah Connor,Calibration schedule reviewed. 3 other instruments found approaching due date. Schedule updated.
+a1000016-0016-0016-0016-000000000001,3c9d0e1f-9991-0002-1113-223334445556,2024-01-25T08:00:00Z,John Miller,Solenoid valve coil burned out. Cooling water to heat exchanger stopped. Temperature rising.
+a1000016-0016-0016-0016-000000000002,3c9d0e1f-9991-0002-1113-223334445556,2024-01-25T09:00:00Z,Mark Davis,Manual bypass valve opened to maintain cooling flow. Replacement coil sourced from stores.
+a1000016-0016-0016-0016-000000000003,3c9d0e1f-9991-0002-1113-223334445556,2024-01-25T10:30:00Z,Sarah Connor,Replacement coil fitted and tested. Manual bypass closed. Cooling system normal.
+a1000019-0019-0019-0019-000000000001,6f2a3b4c-2224-3335-4446-556667778889,2024-01-28T08:30:00Z,John Miller,Coupling guard found missing during routine inspection. Drive shaft exposed. Safety risk.
+a1000019-0019-0019-0019-000000000002,6f2a3b4c-2224-3335-4446-556667778889,2024-01-28T09:00:00Z,Sarah Connor,Area barricaded until guard fitted. Near miss report raised. Investigation started.
+a1000019-0019-0019-0019-000000000003,6f2a3b4c-2224-3335-4446-556667778889,2024-01-28T10:00:00Z,Mark Davis,New guard fabricated and fitted. Safety inspection signed off. Barricade removed.
+a1000020-0020-0020-0020-000000000001,7a3b4c5d-3335-4446-5557-667778889990,2024-01-29T09:00:00Z,Mark Davis,HPU oil sample shows water contamination 0.8 percent. Hydraulic system performance degraded.
+a1000020-0020-0020-0020-000000000002,7a3b4c5d-3335-4446-5557-667778889990,2024-01-29T10:30:00Z,John Miller,Water source traced to internal heat exchanger tube perforation. Unit isolated.
+a1000020-0020-0020-0020-000000000003,7a3b4c5d-3335-4446-5557-667778889990,2024-01-29T13:00:00Z,Sarah Connor,Oil drained and replaced. Heat exchanger bundle plugged pending replacement. System back online.
+a1000021-0021-0021-0021-000000000001,8b4c5d6e-4446-5557-6668-778889990001,2024-01-30T08:00:00Z,Sarah Connor,Actuator positioner signal erratic. Control valve hunting between 40 and 60 percent continuously.
+a1000021-0021-0021-0021-000000000002,8b4c5d6e-4446-5557-6668-778889990001,2024-01-30T09:00:00Z,Mark Davis,Process impact assessed as moderate. Manual control enabled as temporary measure.
+a1000021-0021-0021-0021-000000000003,8b4c5d6e-4446-5557-6668-778889990001,2024-01-30T11:30:00Z,John Miller,Positioner replaced with calibrated spare. Valve control restored to automatic. Stable.
+a1000025-0025-0025-0025-000000000001,3f8a9b0c-8880-9991-0002-112223334445,2024-02-03T09:00:00Z,John Miller,Air dryer desiccant saturated. Dewpoint measured at plus 8 degrees C vs minus 40 spec.
+a1000025-0025-0025-0025-000000000002,3f8a9b0c-8880-9991-0002-112223334445,2024-02-03T11:00:00Z,Sarah Connor,Moisture sensitive instruments identified and protected. Desiccant replacement initiated.
+a1000025-0025-0025-0025-000000000003,3f8a9b0c-8880-9991-0002-112223334445,2024-02-03T14:00:00Z,Mark Davis,Fresh desiccant charged. Dewpoint retested at minus 42 degrees C. Within specification. Closed.
+a1000030-0030-0030-0030-000000000001,8e3f4a5b-3335-4446-5557-667778889990,2024-02-08T08:00:00Z,Sarah Connor,Flame detector UV response time borderline. Monthly sensitivity test result 0.95 vs 0.80 minimum.
+a1000030-0030-0030-0030-000000000002,8e3f4a5b-3335-4446-5557-667778889990,2024-02-08T09:30:00Z,John Miller,Detector lens found coated with thin oil film from nearby lubrication point.
+a1000030-0030-0030-0030-000000000003,8e3f4a5b-3335-4446-5557-667778889990,2024-02-08T11:00:00Z,Mark Davis,Detector lens cleaned with IPA. Response time retested at 0.78. Weekly checks scheduled.
+a1000033-0033-0033-0033-000000000001,2b6c7d8e-6668-7779-8880-990001112223,2024-02-11T09:00:00Z,Sarah Connor,Crane wheel flange wear at 12mm remaining vs 20mm minimum. Crane rated at 10 tonne.
+a1000033-0033-0033-0033-000000000002,2b6c7d8e-6668-7779-8880-990001112223,2024-02-11T10:30:00Z,Mark Davis,Crane load restricted to 5 tonne until wheel replacement. All users informed via notice.
+a1000033-0033-0033-0033-000000000003,2b6c7d8e-6668-7779-8880-990001112223,2024-02-11T14:00:00Z,John Miller,Wheel replacement parts ordered. Scheduled for replacement during next planned shutdown.
+a1000035-0035-0035-0035-000000000001,4d8e9f0a-8880-9991-0002-112223334445,2024-02-13T07:00:00Z,Mark Davis,Cooling water pH at 6.2. Below minimum 7.0. Corrosion risk to carbon steel pipework.
+a1000035-0035-0035-0035-000000000002,4d8e9f0a-8880-9991-0002-112223334445,2024-02-13T08:30:00Z,John Miller,Chemical dosing pump output checked. Dosing rate found 30 percent below setpoint.
+a1000035-0035-0035-0035-000000000003,4d8e9f0a-8880-9991-0002-112223334445,2024-02-13T10:00:00Z,Sarah Connor,Dosing rate corrected. pH retested at 7.4. Water treatment log updated. Monitoring daily.
+a1000036-0036-0036-0036-000000000001,5e9f0a1b-9991-0002-1113-223334445556,2024-02-14T08:00:00Z,Sarah Connor,Lube oil filter differential pressure at 3.5 bar. Change-out limit is 3.0 bar. Overdue.
+a1000036-0036-0036-0036-000000000002,5e9f0a1b-9991-0002-1113-223334445556,2024-02-14T09:00:00Z,Mark Davis,Filter element replaced with new. DP dropped to 0.4 bar. Oil sample sent for analysis.
+a1000036-0036-0036-0036-000000000003,5e9f0a1b-9991-0002-1113-223334445556,2024-02-14T10:30:00Z,John Miller,Lab results show oil in good condition. No metal particles found. Next change in 500 hours.
+a1000037-0037-0037-0037-000000000001,6f0a1b2c-0002-1113-2224-334445556667,2024-02-15T09:00:00Z,John Miller,Vibrating screen mesh torn in two locations. Oversized particles passing to downstream process.
+a1000037-0037-0037-0037-000000000002,6f0a1b2c-0002-1113-2224-334445556667,2024-02-15T10:00:00Z,Sarah Connor,Screen bypassed and material diverted to secondary route. Product quality impact assessed.
+a1000037-0037-0037-0037-000000000003,6f0a1b2c-0002-1113-2224-334445556667,2024-02-15T13:00:00Z,Mark Davis,Screen mesh replaced. Test run confirmed correct sizing. Secondary route deactivated. Closed.
+a1000039-0039-0039-0039-000000000001,8b2c3d4e-2225-3336-4447-557668779880,2024-02-17T08:00:00Z,Sarah Connor,Gas detector H2S calibration overdue by 45 days. Identified during HSE monthly inspection.
+a1000039-0039-0039-0039-000000000002,8b2c3d4e-2225-3336-4447-557668779880,2024-02-17T09:00:00Z,Mark Davis,Detector removed for calibration. Temporary replacement unit installed and bump tested.
+a1000039-0039-0039-0039-000000000003,8b2c3d4e-2225-3336-4447-557668779880,2024-02-17T11:00:00Z,John Miller,Calibration records reviewed. Two more detectors found overdue. Both sent for calibration.
+a1000040-0040-0040-0040-000000000001,9c3d4e5f-3336-4447-5558-668779880991,2024-02-18T09:00:00Z,John Miller,Air cooler fin damage on three rows. Fin corrosion visible. Heat transfer efficiency reduced.
+a1000040-0040-0040-0040-000000000002,9c3d4e5f-3336-4447-5558-668779880991,2024-02-18T11:00:00Z,Sarah Connor,Fin comb tool used to straighten accessible fins. Estimated 8 percent efficiency loss remains.
+a1000040-0040-0040-0040-000000000003,9c3d4e5f-3336-4447-5558-668779880991,2024-02-18T13:00:00Z,Mark Davis,Replacement tube bundle quoted. Decision pending based on remaining equipment life assessment.
+a1000006-0006-0006-0006-000000000001,2e9f0a1b-9990-0001-1112-222333444555,2024-01-15T07:00:00Z,Sarah Connor,AHU coil frozen due to low ambient temperature overnight. Unit shutdown automatically.
+a1000006-0006-0006-0006-000000000002,2e9f0a1b-9990-0001-1112-222333444555,2024-01-15T10:00:00Z,John Miller,Coil defrosted using warm air. Anti-freeze setpoint adjusted from 2 to 5 degrees C.
+a1000006-0006-0006-0006-000000000003,2e9f0a1b-9990-0001-1112-222333444555,2024-01-15T12:00:00Z,Mark Davis,Unit restarted and operating normally. Frost protection settings documented. Resolved.
+a1000008-0008-0008-0008-000000000001,4a1b2c3d-1113-2224-3335-445556667778,2024-01-17T09:00:00Z,Mark Davis,Booster pump discharge pressure 20 percent below design. Gradual decline over 2 weeks.
+a1000008-0008-0008-0008-000000000002,4a1b2c3d-1113-2224-3335-445556667778,2024-01-17T13:00:00Z,John Miller,Pump pulled for inspection. Impeller wear confirmed. Replacement part on order. ETA 2 weeks.
+a1000022-0022-0022-0022-000000000001,9c5d6e7f-5557-6668-7779-889990001112,2024-01-31T09:00:00Z,John Miller,Motor earth connection heavily corroded. Found during routine electrical inspection.
+a1000022-0022-0022-0022-000000000002,9c5d6e7f-5557-6668-7779-889990001112,2024-01-31T14:00:00Z,Sarah Connor,Connection cleaned and re-terminated with new lug. Earth resistance tested at 0.1 ohm. OK.
+a1000023-0023-0023-0023-000000000001,1d6e7f8a-6668-7779-8880-990001112223,2024-02-01T07:30:00Z,Mark Davis,Water dripping from extruder cooling jacket. Suspected cracked weld on jacket body.
+a1000023-0023-0023-0023-000000000002,1d6e7f8a-6668-7779-8880-990001112223,2024-02-01T10:00:00Z,John Miller,Extruder shut down. Weld crack confirmed by dye penetrant test. Repair welding scheduled.
+a1000023-0023-0023-0023-000000000003,1d6e7f8a-6668-7779-8880-990001112223,2024-02-01T15:00:00Z,Sarah Connor,Weld repair completed and pressure tested to 1.5 times working pressure. No leaks found.
+a1000024-0024-0024-0024-000000000001,2e7f8a9b-7779-8880-9991-001112223334,2024-02-02T08:00:00Z,Sarah Connor,Gear pump flow reduced. Internal clearance measurement shows excessive wear.
+a1000024-0024-0024-0024-000000000002,2e7f8a9b-7779-8880-9991-001112223334,2024-02-02T12:00:00Z,Mark Davis,Standby pump commissioned. Failed pump removed and sent for refurbishment. Resolved.
+a1000031-0031-0031-0031-000000000001,9f4a5b6c-4446-5557-6668-778889990001,2024-02-09T07:30:00Z,John Miller,Mechanical seal weeping product at low rate. Drip tray collecting approximately 50ml per hour.
+a1000031-0031-0031-0031-000000000002,9f4a5b6c-4446-5557-6668-778889990001,2024-02-09T10:00:00Z,Sarah Connor,Seal replacement scheduled for next planned downtime in 5 days. Drip tray being monitored.
+a1000031-0031-0031-0031-000000000003,9f4a5b6c-4446-5557-6668-778889990001,2024-02-09T15:00:00Z,Mark Davis,Seal replaced during scheduled downtime. Pump retested with no leakage. Closed.
+a1000034-0034-0034-0034-000000000001,3c7d8e9f-7779-8880-9991-001112223334,2024-02-12T08:30:00Z,John Miller,Centrifuge vibration slightly high at startup. Balance check shows 8g residual imbalance.
+a1000034-0034-0034-0034-000000000002,3c7d8e9f-7779-8880-9991-001112223334,2024-02-12T11:00:00Z,Sarah Connor,Balance weights adjusted. Residual imbalance reduced to 1.2g. Within tolerance. Resolved.
+a1000040-0040-0040-0040-000000000004,9c3d4e5f-3336-4447-5558-668779880991,2024-02-19T10:00:00Z,John Miller,Equipment life assessment completed. Cooler to be replaced in next annual shutdown.
+a1000041-0041-0041-0041-000000000001,1d4e5f6a-4447-5558-6669-779880991002,2024-02-19T08:30:00Z,Mark Davis,Steam trap drain blocked. Condensate backing up into distribution line. Waterham risk low.
+a1000041-0041-0041-0041-000000000002,1d4e5f6a-4447-5558-6669-779880991002,2024-02-19T11:00:00Z,John Miller,Trap cleaned using steam trap cleaning kit. Condensate draining correctly. Trap tested OK.
