@@ -14,12 +14,22 @@ entity Incidents : cuid, managed {
   title        : String @title: 'Title';
   urgency      : Association to Urgency default 'M';
   status       : Association to Status default 'N';
-  conversation : Composition of many {
-                   key ID        : UUID;
-                       timestamp : type of managed : createdAt;
-                       author    : type of managed : createdBy;
-                       message   : String;
-                 };
+  conversation : Composition of many Conversations
+                   on conversation.up_ = $self;
+//conversation : Composition of many {
+//                 key ID        : UUID;
+//                     timestamp : type of managed : createdAt;
+//                     author    : type of managed : createdBy;
+//                     message   : String;
+//               };
+}
+
+entity Conversations {
+  key ID        : UUID;
+      up_       : Association to Incidents;
+      timestamp : type of managed : createdAt;
+      author    : type of managed : createdBy;
+      message   : String;
 }
 
 /**
@@ -67,10 +77,10 @@ entity Urgency : CodeList {
 }
 
 entity IncidentStats {
-  key status_code   : String;
-      status_name   : String;
-      count         : Integer;
-      criticality   : Integer;
+  key status_code : String;
+      status_name : String;
+      count       : Integer;
+      criticality : Integer;
 }
 
 type EMailAddress : String;

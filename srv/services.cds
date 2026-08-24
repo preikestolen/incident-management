@@ -13,6 +13,39 @@ service ProcessorService {
     entity Incidents          as projection on my.Incidents
         actions {
             action escalateIncident(assigneeName: String) returns Incidents;
+            action closeIncident()                        returns Incidents;
+            action assignToCustomer(customerId: String)   returns Incidents;
+            action reopenIncident()                       returns Incidents;
+        };
+
+    @readonly
+    @cds.redirection.target
+    entity Conversations      as projection on my.Conversations;
+
+    @readonly
+    entity ConversationFeed   as
+        select from my.Conversations as c {
+            key c.ID,
+                c.timestamp,
+                c.author,
+                c.message,
+                c.up_.title              as incident_title,
+                c.up_.status.code        as status_code,
+                c.up_.status.descr       as status_descr,
+                c.up_.status.criticality as criticality,
+                c.up_.urgency.code       as urgency_code,
+                c.up_.urgency.descr      as urgency_descr,
+                c.up_.ID                 as incident_ID,
+                case
+                    c.up_.urgency.code
+                    when 'H'
+                         then 1
+                    when 'M'
+                         then 2
+                    when 'L'
+                         then 3
+                    else 0
+                end                      as urgency_criticality : Integer
         };
 
     @readonly

@@ -55,6 +55,10 @@ modules:
           artifacts:
             - urgency.zip
           target-path: app/
+        - name: incidentmanagementfeed
+          artifacts:
+            - feed.zip
+          target-path: app/
     requires:
       - name: incident-management-auth
       - name: srv-api
@@ -83,8 +87,7 @@ modules:
       commands:
         - npm ci
         - npm run build
-      supported-platforms:
-        []
+      supported-platforms: []
 
   - name: incidentmanagementstatistics
     type: html5
@@ -95,8 +98,7 @@ modules:
       commands:
         - npm ci
         - npm run build
-      supported-platforms:
-        []
+      supported-platforms: []
 
   - name: incidentmanagementurgency
     type: html5
@@ -107,8 +109,18 @@ modules:
       commands:
         - npm ci
         - npm run build
-      supported-platforms:
-        []
+      supported-platforms: []
+
+  - name: incidentmanagementfeed
+    type: html5
+    path: app/feed
+    build-parameters:
+      build-result: dist
+      builder: custom
+      commands:
+        - npm ci
+        - npm run build
+      supported-platforms: []
 
   - name: incident-management-destinations
     type: com.sap.application.content

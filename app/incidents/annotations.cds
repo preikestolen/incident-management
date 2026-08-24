@@ -56,6 +56,24 @@ annotate service.Incidents with @(
             Inline: false
         },
         {
+            $Type : 'UI.DataFieldForAction',
+            Action: 'ProcessorService.closeIncident',
+            Label : 'Close Incident',
+            Inline: false
+        },
+        {
+            $Type : 'UI.DataFieldForAction',
+            Action: 'ProcessorService.assignToCustomer',
+            Label : 'Assign to Customer',
+            Inline: false
+        },
+        {
+            $Type : 'UI.DataFieldForAction',
+            Action: 'ProcessorService.reopenIncident',
+            Label : 'Reopen',
+            Inline: false
+        },
+        {
             $Type: 'UI.DataField',
             Value: title,
             Label: '{i18n>Title}',
@@ -115,11 +133,28 @@ annotate service.Incidents with @(
         $Type: 'UI.FieldGroupType',
         Data : [],
     },
-    UI.Identification                : [{
-        $Type : 'UI.DataFieldForAction',
-        Action: 'ProcessorService.escalateIncident',
-        Label : 'Escalate'
-    }],
+    UI.Identification                : [
+        {
+            $Type : 'UI.DataFieldForAction',
+            Action: 'ProcessorService.escalateIncident',
+            Label : 'Escalate'
+        },
+        {
+            $Type : 'UI.DataFieldForAction',
+            Action: 'ProcessorService.closeIncident',
+            Label : 'Close Incident'
+        },
+        {
+            $Type : 'UI.DataFieldForAction',
+            Action: 'ProcessorService.assignToCustomer',
+            Label : 'Assign to Customer'
+        },
+        {
+            $Type : 'UI.DataFieldForAction',
+            Action: 'ProcessorService.reopenIncident',
+            Label : 'Reopen'
+        }
+    ],
     UI.FieldGroup #GeneralInformation: {
         $Type: 'UI.FieldGroupType',
         Data : [
@@ -213,18 +248,69 @@ annotate ProcessorService.Incidents with actions {
             ],
             TargetEntities  : [conversation]
         },
-        cds.odata.bindingparameter.name: 'in',
-        UI.DataFieldForAction          : {Action: 'ProcessorService.escalateIncident'}
+        cds.odata.bindingparameter.name: 'in'
+    );
+    closeIncident    @(
+        Core.OperationAvailable        : in.IsActiveEntity,
+        Common.SideEffects             : {
+            TargetProperties: ['in/status_code'],
+            TargetEntities  : [conversation]
+        },
+        cds.odata.bindingparameter.name: 'in'
     );
 };
 
-annotate ProcessorService with @(UI.DataFieldForAction #escalate: {
-    $Type : 'UI.DataFieldForAction',
-    Action: 'ProcessorService.escalateIncident',
-    Label : 'Escalate'
-});
+annotate ProcessorService.Incidents with actions {
+    assignToCustomer @(
+        Core.OperationAvailable        : in.IsActiveEntity,
+        Common.SideEffects             : {
+            TargetProperties: [
+                'in/customer_ID',
+                'in/status_code'
+            ],
+            TargetEntities  : [conversation]
+        },
+        cds.odata.bindingparameter.name: 'in'
+    );
+};
 
 annotate ProcessorService.Incidents actions {
-    escalateIncident(assigneeName @title: 'Assignee Name'
+    escalateIncident(assigneeName @title: 'Assignee Name' );
+};
+
+annotate ProcessorService.Incidents actions {
+    assignToCustomer(customerId @(
+        title           : 'Customer',
+        Common.ValueList: {
+            $Type         : 'Common.ValueListType',
+            CollectionPath: 'Customers',
+            Parameters    : [
+                {
+                    $Type            : 'Common.ValueListParameterInOut',
+                    LocalDataProperty: customerId,
+                    ValueListProperty: 'ID',
+                },
+                {
+                    $Type            : 'Common.ValueListParameterDisplayOnly',
+                    ValueListProperty: 'name',
+                },
+                {
+                    $Type            : 'Common.ValueListParameterDisplayOnly',
+                    ValueListProperty: 'email',
+                },
+            ]
+        }
+    )
+    );
+};
+
+annotate ProcessorService.Incidents with actions {
+    reopenIncident @(
+        Core.OperationAvailable        : in.IsActiveEntity,
+        Common.SideEffects             : {
+            TargetProperties: ['in/status_code'],
+            TargetEntities  : [conversation]
+        },
+        cds.odata.bindingparameter.name: 'in'
     );
 };

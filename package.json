@@ -25,7 +25,8 @@
   "sapux": [
     "app/incidents",
     "app/statistics",
-    "app/urgency"
+    "app/urgency",
+    "app/feed"
   ],
   "cds": {
     "requires": {
