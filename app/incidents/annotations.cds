@@ -316,11 +316,12 @@ annotate ProcessorService.Incidents with actions {
 };
 
 annotate service.Incidents.attachments with {
-      content @(
-          Core.AcceptableMediaTypes: [
-              'image/png',
-              'image/jpeg'
-          ],
-          Validation.Maximum: '100KB'
-      );
-  };
+    content @(
+        Core.AcceptableMediaTypes   : [
+            'image/png',
+            'image/jpeg'
+        ],
+        Core.ContentDisposition.Type: 'inline',
+        Validation.Maximum          : '100KB'
+    );
+};

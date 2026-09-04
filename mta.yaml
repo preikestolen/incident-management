@@ -8,6 +8,7 @@ parameters:
 build-parameters:
   before-all:
     - builder: custom
+      timeout: 20m
       commands:
         - npm ci
         - npx cds build --production
