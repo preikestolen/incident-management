@@ -10,7 +10,6 @@ annotate service.IncidentsByStatus with @(
             'concat',
             'groupby',
             'filter',
-            'expand',
             'search'
         ],
         Rollup                : #None,
@@ -65,4 +64,23 @@ annotate service.IncidentsByStatus with @(
 
 annotate service.IncidentsByStatus with {
     status_name @Common.Label: 'Status';
+    status_code @(
+        Common.Label                   : 'Status',
+        Common.ValueListWithFixedValues: true,
+        Common.ValueList               : {
+            $Type         : 'Common.ValueListType',
+            CollectionPath: 'Status',
+            Parameters    : [
+                {
+                    $Type            : 'Common.ValueListParameterInOut',
+                    LocalDataProperty: status_code,
+                    ValueListProperty: 'code'
+                },
+                {
+                    $Type            : 'Common.ValueListParameterDisplayOnly',
+                    ValueListProperty: 'descr'
+                }
+            ]
+        }
+    );
 };

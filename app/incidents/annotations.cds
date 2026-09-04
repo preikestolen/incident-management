@@ -222,7 +222,7 @@ annotate service.Status with {
     code @Common.Text: descr
 };
 
-annotate service.Incidents.conversation with @(UI.LineItem #Conversation: [
+annotate service.Conversations with @(UI.LineItem #Conversation: [
     {
         $Type: 'UI.DataField',
         Value: author,
@@ -314,3 +314,13 @@ annotate ProcessorService.Incidents with actions {
         cds.odata.bindingparameter.name: 'in'
     );
 };
+
+annotate service.Incidents.attachments with {
+      content @(
+          Core.AcceptableMediaTypes: [
+              'image/png',
+              'image/jpeg'
+          ],
+          Validation.Maximum: '100KB'
+      );
+  };

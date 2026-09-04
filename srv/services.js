@@ -21,10 +21,14 @@ class ProcessorService extends cds.ApplicationService {
 
   /** Custom Validation */
   async onUpdate(req) {
-    let closed = await SELECT.one(1)
-      .from(req.subject)
-      .where`status.code = 'C'`
-    if (closed) req.reject(409, 'Can\'t modify a closed incident!')
+    const incidentId = req.data.ID || req.params?.[0]?.ID
+    if (!incidentId) return
+
+    const closed = await SELECT.one.from('sap.capire.incidents.Incidents')
+      .columns('ID')
+      .where({ ID: incidentId, status_code: 'C' })
+
+    if (closed) req.reject(409, "Can't modify a closed incident!")
   }
 
   async onEscalate(req) {

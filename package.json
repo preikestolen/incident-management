@@ -2,14 +2,19 @@
   "name": "incident-management",
   "version": "1.0.0",
   "dependencies": {
-    "@cap-js/hana": "^2",
-    "@sap/cds": "^9",
-    "@sap/xssec": "^4"
+    "@aws-sdk/client-s3": "^3.1121.0",
+    "@aws-sdk/lib-storage": "^3.1121.0",
+    "@cap-js/attachments": "^4.0.0",
+    "@cap-js/db-service": "^3.0.1",
+    "@cap-js/hana": "^3.0.2",
+    "@sap/cds": "^10.0.6",
+    "@sap/xssec": "^4",
+    "sap-cf-mailer": "^0.0.5"
   },
   "devDependencies": {
     "@cap-js/cds-test": "^1.0.2",
-    "@cap-js/sqlite": "^2.4",
-    "@sap/cds-dk": "^9",
+    "@cap-js/sqlite": "^3.0.2",
+    "@sap/cds-dk": "^10.0.7",
     "cds-plugin-ui5": "^0.17.0",
     "mocha": "^11.8.0"
   },
@@ -51,11 +56,20 @@
         }
       },
       "[production]": {
-        "auth": "xsuaa"
+        "auth": "xsuaa",
+        "attachments": {
+          "kind": "db",
+          "scan": false,
+          "inline": true
+        }
       },
       "destinations": true,
       "html5-repo": true,
-      "workzone": true
+      "workzone": true,
+      "attachments": {
+        "kind": "db",
+        "inline": true
+      }
     }
   }
 }

@@ -10,7 +10,6 @@ annotate service.IncidentsByUrgency with @(
             'concat',
             'groupby',
             'filter',
-            'expand',
             'search'
         ],
         Rollup                : #None,
@@ -59,4 +58,23 @@ annotate service.IncidentsByUrgency with @(
 
 annotate service.IncidentsByUrgency with {
     urgency_name @Common.Label: 'Urgency';
+    urgency_code @(
+        Common.Label                   : 'Urgency',
+        Common.ValueListWithFixedValues: true,
+        Common.ValueList               : {
+            $Type         : 'Common.ValueListType',
+            CollectionPath: 'Urgency',
+            Parameters    : [
+                {
+                    $Type            : 'Common.ValueListParameterInOut',
+                    LocalDataProperty: urgency_code,
+                    ValueListProperty: 'code'
+                },
+                {
+                    $Type            : 'Common.ValueListParameterDisplayOnly',
+                    ValueListProperty: 'descr'
+                }
+            ]
+        }
+    );
 };

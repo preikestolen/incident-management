@@ -76,10 +76,40 @@ annotate service.ConversationFeed with {
     urgency_descr  @Common.Label: 'Urgency';
     status_code    @(
         Common.Label                   : 'Status',
-        Common.ValueListWithFixedValues: true
+        Common.ValueListWithFixedValues: true,
+        Common.ValueList               : {
+            $Type         : 'Common.ValueListType',
+            CollectionPath: 'Status',
+            Parameters    : [
+                {
+                    $Type            : 'Common.ValueListParameterInOut',
+                    LocalDataProperty: status_code,
+                    ValueListProperty: 'code'
+                },
+                {
+                    $Type            : 'Common.ValueListParameterDisplayOnly',
+                    ValueListProperty: 'descr'
+                }
+            ]
+        }
     );
     urgency_code   @(
         Common.Label                   : 'Urgency',
-        Common.ValueListWithFixedValues: true
+        Common.ValueListWithFixedValues: true,
+        Common.ValueList               : {
+            $Type         : 'Common.ValueListType',
+            CollectionPath: 'Urgency',
+            Parameters    : [
+                {
+                    $Type            : 'Common.ValueListParameterInOut',
+                    LocalDataProperty: urgency_code,
+                    ValueListProperty: 'code'
+                },
+                {
+                    $Type            : 'Common.ValueListParameterDisplayOnly',
+                    ValueListProperty: 'descr'
+                }
+            ]
+        }
     );
 };

@@ -4,6 +4,8 @@ using {
   sap.common.CodeList
 } from '@sap/cds/common';
 
+using {Attachments} from '@cap-js/attachments';
+
 namespace sap.capire.incidents;
 
 /**
@@ -16,6 +18,7 @@ entity Incidents : cuid, managed {
   status       : Association to Status default 'N';
   conversation : Composition of many Conversations
                    on conversation.up_ = $self;
+  attachments  : Composition of many Attachments;
 //conversation : Composition of many {
 //                 key ID        : UUID;
 //                     timestamp : type of managed : createdAt;
