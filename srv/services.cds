@@ -26,7 +26,7 @@ service ProcessorService {
             )                                             returns Incidents;
         };
 
-    @readonly
+    //@readonly
     @cds.redirection.target
     entity Conversations      as projection on my.Conversations;
 
