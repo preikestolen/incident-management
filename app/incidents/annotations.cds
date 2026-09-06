@@ -91,6 +91,13 @@ annotate service.Incidents with @(
             Value      : status_code,
             Criticality: status.criticality,
         },
+        {
+            $Type : 'UI.DataFieldForAction',
+            Action: 'ProcessorService.sendNotification',
+            Label : 'Send Notification',
+            Inline: true,
+
+        },
     ],
     UI.SelectionFields               : [
         status_code,
@@ -136,23 +143,33 @@ annotate service.Incidents with @(
     UI.Identification                : [
         {
             $Type : 'UI.DataFieldForAction',
+
             Action: 'ProcessorService.escalateIncident',
             Label : 'Escalate'
         },
         {
             $Type : 'UI.DataFieldForAction',
+
             Action: 'ProcessorService.closeIncident',
             Label : 'Close Incident'
         },
         {
             $Type : 'UI.DataFieldForAction',
+
             Action: 'ProcessorService.assignToCustomer',
             Label : 'Assign to Customer'
         },
         {
             $Type : 'UI.DataFieldForAction',
+
             Action: 'ProcessorService.reopenIncident',
             Label : 'Reopen'
+        },
+        {
+            $Type : 'UI.DataFieldForAction',
+
+            Action: 'ProcessorService.sendNotification',
+            Label : 'Send Notification'
         }
     ],
     UI.FieldGroup #GeneralInformation: {
@@ -258,6 +275,12 @@ annotate ProcessorService.Incidents with actions {
         },
         cds.odata.bindingparameter.name: 'in'
     );
+    sendNotification @(
+        Core.OperationAvailable        : in.IsActiveEntity,
+        Common.Label                   : 'Notification',
+        Common.SideEffects             : {TargetEntities: [conversation]},
+        cds.odata.bindingparameter.name: 'in'
+    );
 };
 
 annotate ProcessorService.Incidents with actions {
@@ -325,3 +348,5 @@ annotate service.Incidents.attachments with {
         Validation.Maximum          : '100KB'
     );
 };
+
+annotate service.Incidents with @UI.RequestAtLeast: [customer.email];

@@ -16,6 +16,14 @@ service ProcessorService {
             action closeIncident()                        returns Incidents;
             action assignToCustomer(customerId: String)   returns Incidents;
             action reopenIncident()                       returns Incidents;
+            action sendNotification(toEmail: String @(
+                title: 'Recipient Email',
+                UI.ParameterDefaultValue: in.customer.email
+            ),
+                                    subject: String @title: 'Subject',
+                                    message: String @title: 'Message',
+                                    cc: String @title: 'CC'
+            )                                             returns Incidents;
         };
 
     @readonly
@@ -90,3 +98,7 @@ annotate ProcessorService.Incidents with @odata.insertable;
 
 annotate ProcessorService with @(requires: 'support');
 annotate AdminService with @(requires: 'admin');
+
+service CatalogService {
+    function sendMail() returns String;
+}
